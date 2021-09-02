@@ -1,7 +1,102 @@
 {% extends "base.html" %}
 
+{% block top %}
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+        <article class="media block">
+            <figure class="media-left">
+                <p class="image is-128x128 is-hidden-mobile">
+                    <img src="me.jpg" class="is-rounded" >
+                </p>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <h1 class="title">
+                        Torben Teepe
+
+                    </h1>
+                    <p class="subtitle">
+                        I'm a PhD student at TUM. I'm interested in Computer Vision and Machine Learning.
+                    </p>
+
+                </div>
+            </div>
+        </article>
+        </div>
+    </div>
+</section>
+{% endblock top %}
+
 {% block content %}
-<h1 class="title">
-	Torben Teepe
-</h1>
+<div class="content">
+    <h2>Research</h2>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="columns">
+                <div class="column is-narrow is-hidden-mobile p-0">
+                    <figure class="image is-3by2" style="width: 200px">
+                        <img src="gaitgraph.png" alt="GaitGraph">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h4>GaitGraph: Graph Convolutional Network for Skeleton-Based Gait Recognition</h4>
+                    <p>
+                        <b>T. Teepe</b>, A. Khan, J. Gilg, F. Herzog, S. Hörmann, and G. Rigoll<br>
+                        <span class="is-italic">2021 IEEE International Conference on Image Processing (ICIP)</span><br>
+                        <a href="https://doi.org/10.1109/ICIP42928.2021.9506717" class="tag is-warning is-light">DOI</a>
+                        <a href="https://arxiv.org/abs/2101.11228" class="tag is-danger is-light">arXiv</a>
+                        <a href="https://github.com/tteepe/GaitGraph" class="tag is-info is-light">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="columns">
+                <div class="column is-narrow is-hidden-mobile p-0">
+                    <figure class="image is-3by2" style="width: 200px">
+                        <img src="lightmbn.png">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h4>Lightweight Multi-Branch Network for Person Re-Identification</h4>
+                    <p>
+                        F. Herzog, X. Ji, <b>T. Teepe</b>, S. Hörmann, J. Gilg, and G. Rigoll <br>
+                        <span class="is-italic">2021 IEEE International Conference on Image Processing (ICIP)</span><br>
+                        <a href="https://doi.org/10.1109/ICIP42928.2021.9506733" class="tag is-warning is-light">DOI</a>
+                        <a href="https://arxiv.org/abs/2101.10774" class="tag is-danger is-light">arXiv</a>
+                        <a href="https://github.com/jixunbo/LightMBN" class="tag is-info is-light">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="columns">
+                <div class="column is-narrow is-hidden-mobile p-0">
+                    <figure class="image is-3by2" style="width: 200px">
+                        <img src="partiallfw.png">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h4>Attention-Based Partial Face Recognition</h4>
+                    <p>
+                        S. Hörmann, Z. Zhang, M. Knoche, <b>T. Teepe</b>, G. Rigoll<br>
+                        <span class="is-italic">2021 IEEE International Conference on Image Processing (ICIP)</span><br>
+                        <a href="https://doi.org/10.1109/ICIP42928.2021.9506476" class="tag is-warning is-light">DOI</a>
+                        <a href="https://arxiv.org/abs/2106.06415" class="tag is-danger is-light">arXiv</a>
+                        <a href="https://github.com/stefhoer/PartialLFW" class="tag is-info is-light">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

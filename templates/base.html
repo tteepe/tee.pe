@@ -2,17 +2,53 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>tee.pe - Torben Teepe</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tee.pe - Torben Teepe</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <section class="section">
+{% block top %} {% endblock %}
+<section class="section">
     <div class="container">
-      {% block content %} {% endblock %}
+        {% block content %} {% endblock %}
     </div>
-  </section>
+</section>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <a href="javascript:document.getElementById('imprint').classList.add('is-active');">
+                Contact
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="imprint">
+    <div class="modal-background" onclick="document.getElementById('imprint').classList.remove('is-active');"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Contact</p>
+            <a class="delete"
+               aria-label="close"
+               href="javascript:document.getElementById('imprint').classList.remove('is-active');"
+            ></a>
+        </header>
+        <section class="modal-card-body">
+            Torben Teepe<br>
+            <br>
+            E-Mail: torben@tee.pe<br>
+            Website: https://tee.pe<br>
+        </section>
+        <footer class="modal-card-foot">
+        </footer>
+    </div>
+</div>
+
 </body>
 
 </html>
