@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tee.pe/sitemap.xml
