@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torben Teepe</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link href="css/brands.css" rel="stylesheet" />
+    <link href="css/solid.css" rel="stylesheet" />
+    <style type="text/css">
+        body, html {
+            /* background-color: rgba(255, 180, 206); */
+            background-color: rgb(255, 247, 242);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            background-color: rgb(255, 247, 242);
+        }
+        .me {
+            border: 2px solid black;
+            z-index: 2;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 50px
+        }
+        hr {
+            border: none;
+            border-top: 1.5px dotted black;
+            opacity: 1;
+        }
+        .about {
+            margin-top: 15%;
+        }
+        .lol {
+            margin-top: 9%;
+        }
+        .card {
+            border: 2px solid black;
+        }
+        .btn-tt {
+            border: 2px solid black;
+            background-color: rgb(216, 255, 182);
+            /* background-color: rgb(255, 211, 243); */
+        }
+        .btn-tt:hover {
+            border: 2px solid black;
+            background-color: rgb(255, 211, 243);
+        }
+        .text-bg-tt {
+            background-color: rgb(255, 211, 243);
+            color: black;
+        }
+    </style>
+</head>
+<body class="py-5">
+    <div class="container main my-5">
+        <div class="row g-0 justify-content-center">
+          <div class="col-md-4 order-last order-md-first about">
+            <p class="px-2">I'm a Computer Vision Researcher with a PhD from TUM and research experience in 3D Perception &amp; Tracking and Biometric Recognition. I also enjoyed teaching Signals &amp; Systems.</p>
+            <p class="px-2">Otherwise I love to Swim, Bike &amp; Run.</p>
+            <hr>
+            <p class="px-2 fa-lg">
+                <a href="mailto:torben@tee.pe" class="btn btn-tt"><i class="fa-brands fa-at mx-1"></i></a>
+                <a href="https://scholar.google.de/citations?user=TWJuTroAAAAJ&hl=de" class="btn btn-tt"><i class="fa-brands fa-google-scholar mx-1"></i></a>
+                <a href="https://github.com/tteepe" class="btn btn-tt"><i class="fa-brands fa-github mx-1"></i></a>
+                <a href="https://www.linkedin.com/in/teepe/" class="btn btn-tt"><i class="fa-brands fa-linkedin mx-1"></i></a>
+                <!-- <a href="https://www.linkedin.com/in/teepe/" class="btn btn-tt px-2 ms-5"><strong>TT</strong></a> -->
+            </p>
+          </div>
+          <div class="col-4 col-lg-3 align-self-end">
+            <img src="img/F1B1DCDA-41FC-4E37-B8A2-7D43322FA088_1_105_c.jpeg" class="img-fluid me rounded-pill rounded-bottom">
+          </div>
+          <div class="col-12 col-md-4 text-center text-md-end lol">
+            <h2 class="name m-0 px-2">Torben Teepe</h2>
+            <p class="px-2 d-none d-md-block">(yes, I really bought the domain to my name)</p>
+            <hr class="d-none d-md-block">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3>Selected Publications</h3>
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch"><div class="card mt-3">
+                <img src="img/paper_tracktacular.png" class="card-img-top h-50 object-fit-cover" alt="TrackTacular">
+                <div class="card-body">
+                    <span class="badge float-end text-bg-tt">CVPRW'24</span>
+                    <p class="card-title text-bold"><strong>TrackTacular</strong></p>
+                    <p class="card-text">Lifting Multi-View Detection and Tracking to the Bird's Eye View</p>
+                    <a href="https://openaccess.thecvf.com/content/CVPR2024W/3DMV/papers/Teepe_Lifting_Multi-View_Detection_and_Tracking_to_the_Birds_Eye_View_CVPRW_2024_paper.pdf" class="btn btn-sm btn-tt me-2 align-self-end"><i class="fa-solid fa-file-pdf"></i></a>
+                    <a href="https://github.com/tteepe/TrackTacular" class="btn btn-sm btn-tt align-self-end"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div></div>
+
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch"><div class="card mt-3">
+                <img src="img/paper_sparc2.png" class="card-img-top h-50 object-fit-cover" alt="SpaRC">
+                <div class="card-body">
+                    <span class="badge float-end text-bg-tt">arXiv'24</span>
+                    <p class="card-title text-bold"><strong>SpaRC</strong></p>
+                    <p class="card-text">Sparse Radar-Camera Fusion for 3D Object Detection</p>
+                    <a href="https://arxiv.org/pdf/2411.19860" class="btn btn-sm btn-tt me-2 align-self-end"><i class="fa-solid fa-file-pdf"></i></a>
+                    <a href="https://github.com/phi-wol/sparc" class="btn btn-sm btn-tt align-self-end"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div></div>
+            
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch"><div class="card mt-3">
+                <img src="img/paper_earlybird.png" class="card-img-top h-50 object-fit-cover" alt="EarlyBird">
+                <div class="card-body">
+                    <span class="badge float-end text-bg-tt">WACV'24</span>
+                    <p class="card-title text-bold"><strong>EarlyBird</strong></p>
+                    <p class="card-text">Early-Fusion for Multi-View Tracking in the Bird's Eye View</p>
+                <a href="https://openaccess.thecvf.com/content/WACV2024W/RWS/html/Teepe_EarlyBird_Early-Fusion_for_Multi-View_Tracking_in_the_Birds_Eye_View_WACVW_2024_paper.html" class="btn btn-sm btn-tt me-2 align-self-end"><i class="fa-solid fa-file-pdf"></i></a>
+                <a href="https://github.com/tteepe/EarlyBird" class="btn btn-sm btn-tt align-self-end"><i class="fa-solid fa-code"></i></a>
+            </div>
+            </div></div>
+
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch"><div class="card mt-3">
+                <img src="img/paper_synthehicle.jpg" class="card-img-top h-50 object-fit-cover" alt="Synthehicle">
+                <div class="card-body">
+                    <span class="badge float-end text-bg-tt">WACV'23</span>
+                    <p class="card-title text-bold"><strong>Synthehicle</strong></p>
+                    <p class="card-text">Multi-Vehicle Multi-Camera Tracking in Virtual Cities</p>
+                <a href="https://openaccess.thecvf.com/content/WACV2023W/RWS/papers/Herzog_Synthehicle_Multi-Vehicle_Multi-Camera_Tracking_in_Virtual_Cities_WACVW_2023_paper.pdf" class="btn btn-sm btn-tt me-2 align-self-end"><i class="fa-solid fa-file-pdf"></i></a>
+                <a href="https://github.com/fubel/synthehicle" class="btn btn-sm btn-tt align-self-end"><i class="fa-solid fa-code"></i></a>
+            </div>
+            </div></div>
+
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch"><div class="card mt-3">
+                <img src="img/paper_gaitgraph2.png" class="card-img-top h-50 object-fit-cover" alt="GaitGraph2">
+                <div class="card-body">
+                    <span class="badge float-end text-bg-tt">CVPRW'22</span>
+                    <p class="card-title text-bold"><strong>GaitGraph2</strong></p>
+                    <p class="card-text">Towards a Deeper Understanding of Skeleton-based Gait Recognition</p>
+                <a href="https://openaccess.thecvf.com/content/CVPR2022W/Biometrics/papers/Teepe_Towards_a_Deeper_Understanding_of_Skeleton-Based_Gait_Recognition_CVPRW_2022_paper.pdf" class="btn btn-sm btn-tt me-2 align-self-end"><i class="fa-solid fa-file-pdf"></i></a>
+                <a href="https://github.com/tteepe/GaitGraph2" class="btn btn-sm btn-tt align-self-end"><i class="fa-solid fa-code"></i></a>
+            </div>
+            </div></div>
+
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch"><div class="card mt-3">
+                <img src="img/paper_gaitgraph.png" class="card-img-top h-50 object-fit-cover" alt="GaitGraph">
+                <div class="card-body">
+                    <span class="badge float-end text-bg-tt">ICIP'21</span>
+                    <p class="card-title text-bold"><strong>GaitGraph</strong></p>
+                    <p class="card-text">GaitGraph: Graph Convolutional Network for Skeleton-based Gait Recognition</p>
+                <a href="https://arxiv.org/pdf/2101.11228" class="btn btn-sm btn-tt me-2 align-self-end"><i class="fa-solid fa-file-pdf"></i></a>
+                <a href="https://github.com/tteepe/GaitGraph" class="btn btn-sm btn-tt align-self-end"><i class="fa-solid fa-code"></i></a>
+            </div>
+            </div></div>
+        </div>
+        <a href="https://scholar.google.de/citations?user=TWJuTroAAAAJ&hl=de" class="btn btn-tt mt-3"><i class="fa-brands fa-google-scholar mx-1"></i>Google Scholar</a>
+    </div>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
